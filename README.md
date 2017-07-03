@@ -48,13 +48,14 @@ access server even if server is down.
        		link h2 s1 down (to make server down)
        		link h2 s1 up (to make link up)
        		h1 wget h2 (trying to access server)
-   			dpctl-dump-flows (to view switch table info)
-            h2 wireshark& (to start wireshark in server (h2))
+   		dpctl-dump-flows (to view switch table info)
+                h2 wireshark& (to start wireshark in server (h2))
        .2.1) create server 
 
              inside mininet type h2 xterm&(for opening xterm of a host inside mininet)
              inside xterm type python -m SimpleHTTPServer 80
              now the host h2 acts as a server
+	     do above steps similarly for making h3,h4 as servers
 
     .3) running click(nfv)
         
